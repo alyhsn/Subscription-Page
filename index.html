@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Subscription Page</title>
+</head>
+<body>
+    <div class="header">
+        <div class="headernav">
+            <img src="icon.png" alt="Subscription Icon" class="logo">
+            <h2 class="appname">Your App Name</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Choose Your Subscription</h1>
+        
+        <div class="subscriptions">
+            <div class="subscription">
+                <h2>Basic</h2>
+                <p class="price">$10/month</p>
+                <button class="addToBasket" data-product="Basic">Add to Basket</button>
+            </div>
+            
+            <div class="subscription">
+                <h2>Premium</h2>
+                <p class="price">$20/month</p>
+                <button class="addToBasket" data-product="Premium">Add to Basket</button>
+            </div>
+
+            <div class="subscription">
+                <h2>Pro</h2>
+                <p class="price">$30/month</p>
+                <button class="addToBasket" data-product="Pro">Add to Basket</button>
+            </div>
+        </div>
+
+        <div class="basket">
+            <h2>Your Basket</h2>
+            <ul id="basketList"></ul>
+            <p>Total: $<span id="totalAmount">0.00</span></p>
+            <button id="checkoutButton" class="takeNoteButton">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
